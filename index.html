@@ -18,13 +18,75 @@ Select TWO Additional Features to Add
 <html>
 
 <head>
-  <title>Unit 5 Project</title>
+  <title>Friendsgiving!!!!</title>
   <meta charset="utf-8">
   <style>
+.warning {color:rgb(255, 55, 55)}
+.desserts {color:rgb(40, 180, 255)}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #ffffff;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #a7dafb;
+  color: white;
+  transform: rotateY(180deg);
+}
 
   </style>
 </head>
 <body>
+  <div id="info"> 
+  <h2>About this Friendsgiving</h2>
+  <p>
+   It will be located at my humble abode in brooklyn.
+    Be there or be square. <span class="warning"> Warning: I have a big fat and scary toy poodle </span>
+  </p>
+  <p>Please bring food, this is potluck style! <span class="desserts">Desserts are encouraged :3 </span>
+
+  <h2>Whos invited...?</h2>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+     <img src="https://media.tenor.com/bAXHjBt3EbwAAAAm/devious-thinking-emoticon-emoticon.webp" width="200">
+    </div>
+    <div class="flip-card-back">
+      <h1>everyone LOL</h1>
+    </div>
+  </div>
+</div>
+  </p>
+  </div>
 
  
 
