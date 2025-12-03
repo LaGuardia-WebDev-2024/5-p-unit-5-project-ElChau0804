@@ -13,6 +13,21 @@ Select TWO Additional Features to Add
 [ no ] Feature 6 - Unique Border Styles
 -->
 
+<!-- Unit 5 Project
+Requirements
+[ yes ] <div> and <span>
+[ yes ] border:, margin:, and padding: 
+[ yes ] Three Images
+
+Select TWO Additional Features to Add  
+[ no ] Feature 1 - Flexbox
+[ yes ] Feature 2 - Flip Card
+[ yes ] Feature 3 - Animation
+[ no ] Feature 4 - Linear Gradient
+[ no ] Feature 5 - Use a .Gif
+[ no ] Feature 6 - Unique Border Styles
+-->
+
 
 <!DOCTYPE html>
 <html>
@@ -21,13 +36,33 @@ Select TWO Additional Features to Add
   <title>Friendsgiving!!!!</title>
   <meta charset="utf-8">
   <style>
+      body {
+        text-align: center;
+        background-image:url("https://previews.123rf.com/images/parkheta/parkheta1711/parkheta171100059/89841655-thanksgiving-turkey-pattern-on-the-white-background-vector-illustration.jpg")
+
+       }
 .warning {color:rgb(255, 55, 55)}
 .desserts {color:rgb(40, 180, 255)}
+h1 {
+  font-size:75px;}
+h1:hover{
+    transform : rotate(360deg);
+  transition: 2s; }
+
+
+p {
+  font-size:25px
+}
+
+h2 {
+  font-size:35px
+}
 .flip-card {
   background-color: transparent;
   width: 300px;
   height: 300px;
   perspective: 1000px;
+  margin: auto ;
 }
 
 .flip-card-inner {
@@ -59,9 +94,31 @@ Select TWO Additional Features to Add
 
 .flip-card-back {
   background-color: #a7dafb;
-  color: white;
+  color: rgb(0, 0, 0);
   transform: rotateY(180deg);
 }
+
+.one {
+  width:200px;
+  margin:20px;
+  border:5px solid lightblue;
+  padding:5px;
+}
+
+.two {
+   width:200px;
+  margin:20px;
+  border:5px solid lightblue;
+  padding:5px;
+}
+
+.three {
+   width:200px;
+  margin:20px;
+  border:5px solid lightblue;
+  padding:5px;
+}
+
 
   </style>
 </head>
@@ -70,10 +127,14 @@ Select TWO Additional Features to Add
   <h2>About this Friendsgiving</h2>
   <p>
    It will be located at my humble abode in brooklyn.
-    Be there or be square. <span class="warning"> Warning: I have a big fat and scary toy poodle </span>
+    Be there or be square. <span class="warning"> Warning: I have a big fat and scary toy poodle </span> <br>
+    <img src="https://github.com/LaGuardia-WebDev-2024/5-p-unit-5-project-ElChau0804/blob/main/IMG_1050.jpeg?raw=true" class="one" width="100pt" >
+    <img src="https://github.com/LaGuardia-WebDev-2024/5-p-unit-5-project-ElChau0804/blob/main/IMG_1162.jpeg?raw=true" class="two" width="100pt">
+    <img src="https://github.com/LaGuardia-WebDev-2024/5-p-unit-5-project-ElChau0804/blob/main/IMG_1056.jpeg?raw=true" class="three"width="100pt">
   </p>
   <p>Please bring food, this is potluck style! <span class="desserts">Desserts are encouraged :3 </span>
-
+</p>
+<p>
   <h2>Whos invited...?</h2>
   <div class="flip-card">
   <div class="flip-card-inner">
@@ -81,7 +142,8 @@ Select TWO Additional Features to Add
      <img src="https://media.tenor.com/bAXHjBt3EbwAAAAm/devious-thinking-emoticon-emoticon.webp" width="200">
     </div>
     <div class="flip-card-back">
-      <h1>everyone LOL</h1>
+      <h1>everyone <br>
+        LOL</h1>
     </div>
   </div>
 </div>
